@@ -31,7 +31,7 @@ class ToyListContainer extends Component {
     }
 
     if (error) {
-      return <div>Error: {error}</div>;
+      return <div>Please Refresh The Page...</div>;
     }
 
     return <ToyList toys={toys} onAddedToCart={onAddedToCart} />;
