@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { connect } from "react-redux";
 import { HomePage, CartPage } from "./pages";
 import { ShopHeader } from "./shop-header";
+import { ShopFooter } from "./shop-footer";
 
 const App = ({ total, numItems }) => {
   return (
@@ -12,6 +13,7 @@ const App = ({ total, numItems }) => {
         <Route path="/" component={HomePage} exact />
         <Route path="/cart" component={CartPage} />
       </Switch>
+      <ShopFooter />
     </div>
   );
 };
